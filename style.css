@@ -12,6 +12,7 @@ html,body{
     /* background-color: ;
  */
   --bg-primary-color: rgb(18, 17, 17);
+  --bg-fill-color:rgb(236, 229, 211);
   /* text rimary color */
   --text-primary-color: rgb(215, 209, 209);
   /* spacing variable */
@@ -52,7 +53,8 @@ section{
     
     flex-direction: column;
    height: 100%;
-   background-color: blue;
+   
+   gap: var(--space-lg);
 }
 section .infos{
     width:100% ;
@@ -68,8 +70,20 @@ section .infos{
 
 }
 .board{
-    border: 1px solid var(--bg-primary-color);
+    border: 1px solid var(--border-primary--color);
     /* its occupy a whole parent div */
-    flex-grow: 1;      
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));      
+    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));      
     
+}
+.block{
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--border-primary--color);
+}
+.fill{
+    background-color: var(--bg-fill-color);
+
 }
