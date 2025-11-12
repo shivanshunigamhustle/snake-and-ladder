@@ -50,7 +50,9 @@ main,section{
 
 }
 .btn{
-    padding: var( --space-sm) var(--space-md);
+    padding: var( --space-md) var(--space-lg);
+    color: rgb(242, 242, 246);
+    background-color:rgb(56, 12, 234) ;
     border:none;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
@@ -58,6 +60,7 @@ main,section{
 }
 .btn:hover{
     transform: scale(1.1);
+    background-color: black;
 }
 
 section{
